@@ -84,8 +84,7 @@
 		F71E98D729472B0300FF87DC /* marvel-vk */ = {
 			isa = PBXGroup;
 			children = (
-				F71E98D829472B0300FF87DC /* AppDelegate.swift */,
-				F71E98DA29472B0300FF87DC /* SceneDelegate.swift */,
+				F74F121B294898AC00F38350 /* Delegates */,
 				F71E98DC29472B0300FF87DC /* ViewController.swift */,
 				F71E98DE29472B0300FF87DC /* Main.storyboard */,
 				F71E98E429472B0400FF87DC /* Assets.xcassets */,
@@ -95,6 +94,15 @@
 				F71E98F62947600400FF87DC /* SnappyLayout.swift */,
 			);
 			path = "marvel-vk";
+			sourceTree = "<group>";
+		};
+		F74F121B294898AC00F38350 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F71E98DA29472B0300FF87DC /* SceneDelegate.swift */,
+				F71E98D829472B0300FF87DC /* AppDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
