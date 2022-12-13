@@ -11,6 +11,8 @@ let screenHeight = UIScreen.main.bounds.size.height
 
 class ViewController: UIViewController {
     
+    var source: [Hero] = Hero.listHeroes()
+    
     private let collectionView = UICollectionView(frame: .zero,collectionViewLayout: UICollectionViewFlowLayout())
     
     private let layout = SnappyLayout()
@@ -54,6 +56,7 @@ extension ViewController{
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 50.0, bottom: 0.0, right: 50.0)
+        //
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -62,8 +65,8 @@ extension ViewController{
         
         collectionView.collectionViewLayout = layout
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 50.0
-        layout.minimumInteritemSpacing = 50.0
+        layout.minimumLineSpacing = 10.0
+        layout.minimumInteritemSpacing = 10.0
         layout.itemSize.width = itemW
         
         NSLayoutConstraint.activate([
@@ -79,7 +82,7 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int)
         -> Int{
-        return 10
+            return source.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -115,7 +118,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
 extension ViewController {
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        <#code#>
+        
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
