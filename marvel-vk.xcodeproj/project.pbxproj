@@ -17,6 +17,7 @@
 		F71E98E529472B0400FF87DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71E98E429472B0400FF87DC /* Assets.xcassets */; };
 		F71E98E829472B0400FF87DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71E98E629472B0400FF87DC /* LaunchScreen.storyboard */; };
 		F71E98F72947600400FF87DC /* SnappyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71E98F62947600400FF87DC /* SnappyLayout.swift */; };
+		F780FAFB294A5572002809DB /* SnnapedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780FAFA294A5572002809DB /* SnnapedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F71E98E729472B0400FF87DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F71E98E929472B0400FF87DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71E98F62947600400FF87DC /* SnappyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappyLayout.swift; sourceTree = "<group>"; };
+		F780FAFA294A5572002809DB /* SnnapedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnnapedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				F71E98E929472B0400FF87DC /* Info.plist */,
 				F71E98E129472B0300FF87DC /* marvel_vk.xcdatamodeld */,
 				F71E98F62947600400FF87DC /* SnappyLayout.swift */,
+				F780FAFA294A5572002809DB /* SnnapedView.swift */,
 			);
 			path = "marvel-vk";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				F71E98DD29472B0300FF87DC /* ViewController.swift in Sources */,
 				F71E98F72947600400FF87DC /* SnappyLayout.swift in Sources */,
 				F70079E3294995AB002F4074 /* Source.swift in Sources */,
+				F780FAFB294A5572002809DB /* SnnapedView.swift in Sources */,
 				F71E98E329472B0300FF87DC /* marvel_vk.xcdatamodeld in Sources */,
 				F71E98D929472B0300FF87DC /* AppDelegate.swift in Sources */,
 				F71E98DB29472B0300FF87DC /* SceneDelegate.swift in Sources */,

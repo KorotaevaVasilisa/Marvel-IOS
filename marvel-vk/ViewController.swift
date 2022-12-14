@@ -56,8 +56,7 @@ extension ViewController{
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 50.0, bottom: 0.0, right: 50.0)
-        //
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView.register(SnappedView.self, forCellWithReuseIdentifier: "Cell")
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
@@ -86,8 +85,9 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        cell.contentView.backgroundColor = .black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! SnappedView
+        cell.superImageV.image = UIImage(named: source[indexPath.item].profilePic)
+        cell.label.text = source[indexPath.item].name
         return cell
     }
 
@@ -100,7 +100,7 @@ extension ViewController: UICollectionViewDelegate {
             
         }else{
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-            
+
             layout.currentPage = indexPath.item
             layout.previousOffset = layout.updateOffset(collectionView)
             setupCell()
