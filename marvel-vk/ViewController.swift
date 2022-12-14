@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     private let layout = SnappyLayout()
     
     var itemW: CGFloat{
-        return screenWidth * 0.4
+        return screenWidth * 0.5
     }
     
     var itemH: CGFloat{
-        return itemW * 1.45
+        return itemW * 1.7
     }
     
     override func viewDidLoad() {
@@ -65,8 +65,8 @@ extension ViewController{
         
         collectionView.collectionViewLayout = layout
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 10.0
-        layout.minimumInteritemSpacing = 10.0
+        layout.minimumLineSpacing = 50.0
+        layout.minimumInteritemSpacing = 50.0
         layout.itemSize.width = itemW
         
         NSLayoutConstraint.activate([
